@@ -1,0 +1,7 @@
+version: '3'
+
+tasks:
+  build:
+    cmds:
+      - go build  -ldflags="-s -w" -trimpath -o ./bin/main.go ./cmd/api/main.go
+    silent: true
